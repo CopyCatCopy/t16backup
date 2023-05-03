@@ -1,0 +1,876 @@
+fileFormatVersion: 2
+guid: 51b752ad267ea24469f7164dc511f194
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7813669796227148184
+    second: juno_front_anim_nearly_done_0
+  - first:
+      213: -8750189793397009883
+    second: juno_front_anim_nearly_done_1
+  - first:
+      213: -8615662796228010509
+    second: juno_front_anim_nearly_done_2
+  - first:
+      213: -4526369095059013306
+    second: juno_front_anim_nearly_done_3
+  - first:
+      213: 8224480378216576510
+    second: juno_front_anim_nearly_done_4
+  - first:
+      213: 1922796882974767726
+    second: juno_front_anim_nearly_done_5
+  - first:
+      213: 8609727043349922799
+    second: juno_front_anim_nearly_done_6
+  - first:
+      213: -2931457959630528201
+    second: juno_front_anim_nearly_done_7
+  - first:
+      213: -6175518930597519061
+    second: juno_front_anim_nearly_done_8
+  - first:
+      213: -1728785661650268151
+    second: juno_front_anim_nearly_done_9
+  - first:
+      213: -954777336867452114
+    second: juno_front_anim_nearly_done_10
+  - first:
+      213: 7237981087016380034
+    second: juno_front_anim_nearly_done_11
+  - first:
+      213: 7424243967995749508
+    second: juno_front_anim_nearly_done_12
+  - first:
+      213: -6109955694596635561
+    second: juno_front_anim_nearly_done_13
+  - first:
+      213: 4024895762950853006
+    second: juno_front_anim_nearly_done_14
+  - first:
+      213: -1539387835534888608
+    second: juno_front_anim_nearly_done_15
+  - first:
+      213: 6515559095874816672
+    second: juno_front_anim_nearly_done_16
+  - first:
+      213: 2963198872719598598
+    second: juno_front_anim_nearly_done_17
+  - first:
+      213: -5730029965925669982
+    second: juno_front_anim_nearly_done_18
+  - first:
+      213: -752234933746672435
+    second: juno_front_anim_nearly_done_19
+  - first:
+      213: 7459644467817199191
+    second: juno_front_anim_nearly_done_20
+  - first:
+      213: -573527523102435372
+    second: juno_front_anim_nearly_done_21
+  - first:
+      213: -7149403685615699274
+    second: juno_front_anim_nearly_done_22
+  - first:
+      213: -353659950244312893
+    second: juno_front_anim_nearly_done_23
+  - first:
+      213: -2428378954270092238
+    second: juno_front_anim_nearly_done_24
+  - first:
+      213: -1788409272478545020
+    second: juno_front_anim_nearly_done_25
+  - first:
+      213: -2474914786314634121
+    second: juno_front_anim_nearly_done_26
+  - first:
+      213: -3102120802210811279
+    second: juno_front_anim_nearly_done_27
+  - first:
+      213: 6017883785330050257
+    second: juno_front_anim_nearly_done_28
+  - first:
+      213: 702950880045263580
+    second: juno_front_anim_nearly_done_29
+  - first:
+      213: -7114452941224050334
+    second: juno_front_anim_nearly_done_30
+  - first:
+      213: -7985820132679817874
+    second: juno_front_anim_nearly_done_31
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: juno_front_anim_nearly_done_0
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 2301
+        width: 454
+        height: 771
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8996154f74bbf6c60800000000000000
+      internalID: 7813669796227148184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: juno_front_anim_nearly_done_1
+      rect:
+        serializedVersion: 2
+        x: 541
+        y: 2301
+        width: 446
+        height: 771
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 522925f4eb4119680800000000000000
+      internalID: -8750189793397009883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: juno_front_anim_nearly_done_2
+      rect:
+        serializedVersion: 2
+        x: 1069
+        y: 2301
+        width: 422
+        height: 771
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3fdd746a5540f6880800000000000000
+      internalID: -8615662796228010509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: juno_front_anim_nearly_done_3
+      rect:
+        serializedVersion: 2
+        x: 1565
+        y: 2301
+        width: 446
+        height: 771
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64183be2a4b1f21c0800000000000000
+      internalID: -4526369095059013306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: juno_front_anim_nearly_done_4
+      rect:
+        serializedVersion: 2
+        x: 2077
+        y: 2301
+        width: 454
+        height: 771
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef5f4cd2459332270800000000000000
+      internalID: 8224480378216576510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: juno_front_anim_nearly_done_5
+      rect:
+        serializedVersion: 2
+        x: 2589
+        y: 2301
+        width: 446
+        height: 771
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6a70f0e3952faa10800000000000000
+      internalID: 1922796882974767726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: juno_front_anim_nearly_done_6
+      rect:
+        serializedVersion: 2
+        x: 3125
+        y: 2301
+        width: 414
+        height: 771
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe342ff2125eb7770800000000000000
+      internalID: 8609727043349922799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: juno_front_anim_nearly_done_7
+      rect:
+        serializedVersion: 2
+        x: 3613
+        y: 2301
+        width: 446
+        height: 771
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7312b3a648e5157d0800000000000000
+      internalID: -2931457959630528201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: juno_front_anim_nearly_done_8
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 1533
+        width: 406
+        height: 766
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b21e80e70462c4aa0800000000000000
+      internalID: -6175518930597519061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: juno_front_anim_nearly_done_9
+      rect:
+        serializedVersion: 2
+        x: 549
+        y: 1533
+        width: 406
+        height: 758
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9001c88a99e1208e0800000000000000
+      internalID: -1728785661650268151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: juno_front_anim_nearly_done_10
+      rect:
+        serializedVersion: 2
+        x: 1069
+        y: 1533
+        width: 406
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2b0c6c1213ffb2f0800000000000000
+      internalID: -954777336867452114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: juno_front_anim_nearly_done_11
+      rect:
+        serializedVersion: 2
+        x: 1573
+        y: 1533
+        width: 406
+        height: 758
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2866b9e3379727460800000000000000
+      internalID: 7237981087016380034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: juno_front_anim_nearly_done_12
+      rect:
+        serializedVersion: 2
+        x: 2077
+        y: 1533
+        width: 406
+        height: 766
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4842936bd86380760800000000000000
+      internalID: 7424243967995749508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: juno_front_anim_nearly_done_13
+      rect:
+        serializedVersion: 2
+        x: 2597
+        y: 1533
+        width: 406
+        height: 758
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 754413eeaa3153ba0800000000000000
+      internalID: -6109955694596635561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: juno_front_anim_nearly_done_14
+      rect:
+        serializedVersion: 2
+        x: 3117
+        y: 1533
+        width: 406
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8119a02f5d4bd730800000000000000
+      internalID: 4024895762950853006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: juno_front_anim_nearly_done_15
+      rect:
+        serializedVersion: 2
+        x: 3621
+        y: 1533
+        width: 406
+        height: 758
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 061b26b6beef2aae0800000000000000
+      internalID: -1539387835534888608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: juno_front_anim_nearly_done_16
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 765
+        width: 406
+        height: 766
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0aa0fae0a7aeb6a50800000000000000
+      internalID: 6515559095874816672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: juno_front_anim_nearly_done_17
+      rect:
+        serializedVersion: 2
+        x: 597
+        y: 765
+        width: 390
+        height: 758
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6042a4fcca56f1920800000000000000
+      internalID: 2963198872719598598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: juno_front_anim_nearly_done_18
+      rect:
+        serializedVersion: 2
+        x: 1101
+        y: 765
+        width: 390
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a328a0ea18da70b0800000000000000
+      internalID: -5730029965925669982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: juno_front_anim_nearly_done_19
+      rect:
+        serializedVersion: 2
+        x: 1621
+        y: 765
+        width: 390
+        height: 758
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dccd36230568f85f0800000000000000
+      internalID: -752234933746672435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: juno_front_anim_nearly_done_20
+      rect:
+        serializedVersion: 2
+        x: 2141
+        y: 765
+        width: 390
+        height: 766
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 756b3fede1bf58760800000000000000
+      internalID: 7459644467817199191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: juno_front_anim_nearly_done_21
+      rect:
+        serializedVersion: 2
+        x: 2645
+        y: 765
+        width: 390
+        height: 758
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d7d194a1cb6a08f0800000000000000
+      internalID: -573527523102435372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: juno_front_anim_nearly_done_22
+      rect:
+        serializedVersion: 2
+        x: 3149
+        y: 765
+        width: 390
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6baf1032a3738cc90800000000000000
+      internalID: -7149403685615699274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: juno_front_anim_nearly_done_23
+      rect:
+        serializedVersion: 2
+        x: 3669
+        y: 765
+        width: 390
+        height: 758
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c8c766262c871bf0800000000000000
+      internalID: -353659950244312893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: juno_front_anim_nearly_done_24
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 0
+        width: 454
+        height: 763
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23452ba053aac4ed0800000000000000
+      internalID: -2428378954270092238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: juno_front_anim_nearly_done_25
+      rect:
+        serializedVersion: 2
+        x: 549
+        y: 0
+        width: 446
+        height: 755
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48bc6e8fd3b4e27e0800000000000000
+      internalID: -1788409272478545020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: juno_front_anim_nearly_done_26
+      rect:
+        serializedVersion: 2
+        x: 1069
+        y: 0
+        width: 422
+        height: 747
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77cba505d1657add0800000000000000
+      internalID: -2474914786314634121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: juno_front_anim_nearly_done_27
+      rect:
+        serializedVersion: 2
+        x: 1573
+        y: 0
+        width: 446
+        height: 755
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 172ffdde09d03f4d0800000000000000
+      internalID: -3102120802210811279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: juno_front_anim_nearly_done_28
+      rect:
+        serializedVersion: 2
+        x: 2077
+        y: 0
+        width: 454
+        height: 763
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d44e2c2b61d38350800000000000000
+      internalID: 6017883785330050257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: juno_front_anim_nearly_done_29
+      rect:
+        serializedVersion: 2
+        x: 2597
+        y: 0
+        width: 446
+        height: 755
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cda65abd91261c900800000000000000
+      internalID: 702950880045263580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: juno_front_anim_nearly_done_30
+      rect:
+        serializedVersion: 2
+        x: 3125
+        y: 0
+        width: 414
+        height: 747
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2618b137eb2644d90800000000000000
+      internalID: -7114452941224050334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: juno_front_anim_nearly_done_31
+      rect:
+        serializedVersion: 2
+        x: 3621
+        y: 0
+        width: 446
+        height: 755
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e65e47766eaac2190800000000000000
+      internalID: -7985820132679817874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 8bf76473f86ec1e46b28af499a5dd249
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
