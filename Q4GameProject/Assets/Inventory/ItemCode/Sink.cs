@@ -1,11 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Sink : MonoBehaviour, IInteractable
 {
     [SerializeField] private string _prompt;
     public int HasToothpaste = 0;
+    public Text tip;
 
     public string InteractionPrompt => _prompt;
 
@@ -26,5 +28,16 @@ public class Sink : MonoBehaviour, IInteractable
             PlayerPrefs.SetInt("HasToothpaste", 0);
             return;
         }
+        else
+        {
+            tip.text = string.Format("Item needed!");
+            Invoke("ClearText", 1f);
+        }
     }
+
+    void ClearText()
+    {
+        tip.text = string.Format("");
+    }
+
 }

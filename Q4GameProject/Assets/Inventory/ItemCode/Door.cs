@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Door : MonoBehaviour, IInteractable
 {
@@ -8,6 +9,7 @@ public class Door : MonoBehaviour, IInteractable
     public bool locked = true;
     public int HasKey = 0;
     public bool Openned = false;
+    public Text tip;
 
 
     [SerializeField] private string _prompt;
@@ -42,6 +44,11 @@ public class Door : MonoBehaviour, IInteractable
                     return;
                 }
             }
+            else
+            {
+                tip.text = string.Format("Item needed!");
+                Invoke("ClearText", 1f);
+            }
         }
         else if (locked == false)
         {
@@ -65,4 +72,10 @@ public class Door : MonoBehaviour, IInteractable
         }
 
     }
+
+    void ClearText()
+    {
+        tip.text = string.Format("");
+    }
+
 }

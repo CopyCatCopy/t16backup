@@ -10,11 +10,13 @@ public class Tutorial : MonoBehaviour
     public GameObject x;
     public GameObject inventory;
     public GameObject timer;
+    public GameObject tip;
 
     private void Start()
     {
         inventory.SetActive(false);
         timer.SetActive(false);
+        tip.SetActive(false);
     }
 
     void Update()
@@ -43,6 +45,7 @@ public class Tutorial : MonoBehaviour
         note.SetActive(false);
         inventory.SetActive(true);
         timer.SetActive(true);
+        tip.SetActive(true);
         Cursor.lockState = CursorLockMode.Locked;
     }
 

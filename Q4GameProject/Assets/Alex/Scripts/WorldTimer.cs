@@ -21,6 +21,7 @@ public class WorldTimer : MonoBehaviour
     public int BedUsed;
     public GameObject Tutorial;
     public Text dayText;
+    public GameObject tip;
 
     void Start()
     {
@@ -133,24 +134,40 @@ public class WorldTimer : MonoBehaviour
 
             time = 240;
             Invoke("ChangeDayText", .01f);
+            if (tip.activeSelf)
+            {
+                tip.SetActive(false);
+            }
         }
         if (DayNumber == 3)
         {
 
             time = 200;
             Invoke("ChangeDayText", .01f);
+            if (tip.activeSelf)
+            {
+                tip.SetActive(false);
+            }
         }
         if (DayNumber == 4)
         {
 
             time = 160;
             Invoke("ChangeDayText", .01f);
+            if (tip.activeSelf)
+            {
+                tip.SetActive(false);
+            }
         }
         if (DayNumber == 5)
         {
 
             time = 120;
             Invoke("ChangeDayText", .01f);
+            if (tip.activeSelf)
+            {
+                tip.SetActive(false);
+            }
         }
         if (DayNumber == 6 && AllTasksComplete == 1)
         {
