@@ -22662,7 +22662,7 @@ PrefabInstance:
     - target: {fileID: 4959347227642662092, guid: 5062f9a95e5560a47abe5bef34d23e5a, type: 3}
       propertyPath: m_Text
       value: "Juno,\n\nI'll have to stay a bit longer in the hospital...\n\nTake
-        care of yourself while we're gone.\n\nExpect a call from us soon--we miss
+        care of yourself while we're gone.\n\nExpect a call from us friday--we miss
         you!\n\n\t\t\t\t\t\tMom"
       objectReference: {fileID: 0}
     - target: {fileID: 4959347227642662093, guid: 5062f9a95e5560a47abe5bef34d23e5a, type: 3}
@@ -33525,6 +33525,85 @@ Transform:
   m_Father: {fileID: 96154280}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 49.3, y: 90, z: 0}
+--- !u!1 &1297565279
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1297565280}
+  - component: {fileID: 1297565283}
+  - component: {fileID: 1297565282}
+  m_Layer: 5
+  m_Name: Day
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1297565280
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1297565279}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1555971173}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 1, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -575, y: -150}
+  m_SizeDelta: {x: 500, y: 300}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1297565282
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1297565279}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 28b6c71a01e43b542a2d635f84c63fa6, type: 3}
+    m_FontSize: 100
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 1
+    m_MaxSize: 100
+    m_Alignment: 2
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: Monday
+--- !u!222 &1297565283
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1297565279}
+  m_CullTransparentMesh: 1
 --- !u!4 &1311564037 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: b419525d5ae05b4458487f5484199793, type: 3}
@@ -34805,13 +34884,14 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 1297565280}
   m_Father: {fileID: 1698725838}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -200, y: -200}
+  m_AnchoredPosition: {x: -200, y: -220}
   m_SizeDelta: {x: 300, y: 300}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1555971174
@@ -34840,6 +34920,7 @@ MonoBehaviour:
   SceneSwitched: 1
   BedUsed: 0
   Tutorial: {fileID: 1391790044}
+  dayText: {fileID: 1297565282}
 --- !u!114 &1555971175
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -34873,7 +34954,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 1
+  m_Text: 0:00
 --- !u!222 &1555971176
 CanvasRenderer:
   m_ObjectHideFlags: 0

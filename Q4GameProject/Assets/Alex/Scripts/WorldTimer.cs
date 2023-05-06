@@ -20,6 +20,7 @@ public class WorldTimer : MonoBehaviour
     public bool SceneSwitched = true;
     public int BedUsed;
     public GameObject Tutorial;
+    public Text dayText;
 
     void Start()
     {
@@ -125,26 +126,31 @@ public class WorldTimer : MonoBehaviour
             time = 320;
             Tutorial.SetActive(true);
             Cursor.lockState = CursorLockMode.None;
+            Invoke("ChangeDayText", .01f);
         }
         if (DayNumber == 2)
         {
 
             time = 240;
+            Invoke("ChangeDayText", .01f);
         }
         if (DayNumber == 3)
         {
 
             time = 200;
+            Invoke("ChangeDayText", .01f);
         }
         if (DayNumber == 4)
         {
 
             time = 160;
+            Invoke("ChangeDayText", .01f);
         }
         if (DayNumber == 5)
         {
 
             time = 120;
+            Invoke("ChangeDayText", .01f);
         }
         if (DayNumber == 6 && AllTasksComplete == 1)
         {
@@ -155,6 +161,30 @@ public class WorldTimer : MonoBehaviour
         {
             SceneManager.LoadScene("BadEnding");
             Cursor.lockState = CursorLockMode.None;
+        }
+    }
+
+    public void ChangeDayText()
+    {
+        if (DayNumber == 1)
+        {
+            dayText.text = string.Format("Monday");
+        }
+        if (DayNumber == 2)
+        {
+            dayText.text = string.Format("Tuesday");
+        }
+        if (DayNumber == 3)
+        {
+            dayText.text = string.Format("Wednesday");
+        }
+        if (DayNumber == 4)
+        {
+            dayText.text = string.Format("Thursday");
+        }
+        if (DayNumber == 5)
+        {
+            dayText.text = string.Format("Friday");
         }
     }
 
