@@ -12,6 +12,8 @@ public class Timer : MonoBehaviour
     public GameObject ui;
     public GameObject failText;
     public GameObject other;
+    public WorldTimer wt;
+    public bool timeAdded = false;
 
     private void Start()
     {
@@ -50,6 +52,12 @@ public class Timer : MonoBehaviour
         PlayerPrefs.SetInt("SinkMiniGame", 0);
         PlayerPrefs.SetInt("GameFinished", 1);
         PlayerPrefs.SetInt("MGameOn", 1);
+        if (timeAdded == false)
+        {
+            wt.time += 15;
+            timeAdded = true;
+        }
+        
     }
 
     public void ReturnFailed()

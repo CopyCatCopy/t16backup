@@ -46,7 +46,7 @@ public class Door : MonoBehaviour, IInteractable
             }
             else
             {
-                tip.text = string.Format("Item needed!");
+                tip.text = string.Format("Key needed!");
                 Invoke("ClearText", 1f);
             }
         }

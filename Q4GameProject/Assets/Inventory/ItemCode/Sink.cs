@@ -30,7 +30,7 @@ public class Sink : MonoBehaviour, IInteractable
         }
         else
         {
-            tip.text = string.Format("Item needed!");
+            tip.text = string.Format("Toothpaste needed!");
             Invoke("ClearText", 1f);
         }
     }

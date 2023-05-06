@@ -30,7 +30,7 @@ public class Alarm : MonoBehaviour, IInteractable
         }
         else
         {
-            tip.text = string.Format("Item needed!");
+            tip.text = string.Format("Battery needed!");
             Invoke("ClearText", 1f);
         }
 
