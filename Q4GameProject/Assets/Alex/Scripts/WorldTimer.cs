@@ -24,6 +24,8 @@ public class WorldTimer : MonoBehaviour
     public GameObject tip;
     public GameObject phone;
     public AudioSource audioSource;
+    public Text tipText;
+    public GameObject phoneSFX;
 
     void Start()
     {
@@ -129,13 +131,14 @@ public class WorldTimer : MonoBehaviour
             time = 320;
             Tutorial.SetActive(true);
             Cursor.lockState = CursorLockMode.None;
-            Invoke("ChangeDayText", .01f);
+            Invoke("ChangeDayText", .025f);
+            tipText.text = string.Format("'WASD' to move");
         }
         if (DayNumber == 2)
         {
 
             time = 240;
-            Invoke("ChangeDayText", .01f);
+            Invoke("ChangeDayText", .025f);
             if (tip.activeSelf)
             {
                 tip.SetActive(false);
@@ -145,7 +148,7 @@ public class WorldTimer : MonoBehaviour
         {
 
             time = 200;
-            Invoke("ChangeDayText", .01f);
+            Invoke("ChangeDayText", .025f);
             if (tip.activeSelf)
             {
                 tip.SetActive(false);
@@ -155,7 +158,7 @@ public class WorldTimer : MonoBehaviour
         {
 
             time = 160;
-            Invoke("ChangeDayText", .01f);
+            Invoke("ChangeDayText", .025f);
             if (tip.activeSelf)
             {
                 tip.SetActive(false);
@@ -165,14 +168,14 @@ public class WorldTimer : MonoBehaviour
         {
 
             time = 120;
-            Invoke("ChangeDayText", .01f);
+            Invoke("ChangeDayText", .025f);
             if (tip.activeSelf)
             {
                 tip.SetActive(false);
             }
             if (AllTasksComplete == 1)
             {
-                tip.SetActive(true);
+                phoneSFX.SetActive(true);
                 audioSource.Stop();
             }
         }

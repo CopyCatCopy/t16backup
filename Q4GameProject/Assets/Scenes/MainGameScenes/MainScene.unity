@@ -5977,7 +5977,6 @@ Transform:
   - {fileID: 1585936163}
   - {fileID: 519403994}
   - {fileID: 929952979}
-  - {fileID: 1497522977}
   m_Father: {fileID: 286050307}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -6302,6 +6301,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _prompt: 
   AreYouSure: 0
+  tip: {fileID: 1232139514}
 --- !u!114 &188283984
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20677,6 +20677,7 @@ MonoBehaviour:
   failText: {fileID: 1027194752}
   other: {fileID: 1640715846}
   wt: {fileID: 1555971174}
+  timeAdded: 0
 --- !u!114 &835159718
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22139,6 +22140,7 @@ MonoBehaviour:
   failText: {fileID: 457726822}
   other: {fileID: 0}
   wt: {fileID: 1555971174}
+  timeAdded: 0
 --- !u!114 &1029139741
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -34912,50 +34914,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: f597125ef3faea34196db21e681e5834, type: 3}
   m_PrefabInstance: {fileID: 652382197}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1497522976
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1497522977}
-  - component: {fileID: 1497522978}
-  m_Layer: 0
-  m_Name: start
-  m_TagString: start
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1497522977
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1497522976}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 7.13, y: 0, z: -8.69}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 153792736}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &1497522978
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1497522976}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1.5, y: 2, z: 2}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1498353143
 GameObject:
   m_ObjectHideFlags: 0
@@ -35325,6 +35283,8 @@ MonoBehaviour:
   tip: {fileID: 153792735}
   phone: {fileID: 481049979}
   audioSource: {fileID: 286050308}
+  tipText: {fileID: 1232139514}
+  phoneSFX: {fileID: 481049979}
 --- !u!114 &1555971175
 MonoBehaviour:
   m_ObjectHideFlags: 0

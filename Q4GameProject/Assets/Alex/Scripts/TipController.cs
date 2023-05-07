@@ -21,10 +21,6 @@ public class TipController : MonoBehaviour
         {
             tip.text = string.Format("' F ' to collect");
         }
-        else if (other.CompareTag("start"))
-        {
-            tip.text = string.Format("'WASD' to move");
-        }
 
     }
 
