@@ -272,6 +272,11 @@ MonoBehaviour:
   ui: {fileID: 1985595977}
   failText: {fileID: 1984067401}
   other: {fileID: 0}
+  wt: {fileID: 0}
+  timeAdded: 0
+  AlarmMiniGame: 0
+  SinkMiniGame: 0
+  FoodMiniGame: 0
 --- !u!114 &158556208
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -871,6 +876,7 @@ MonoBehaviour:
   DelayAmount: 1
   percent: {fileID: 2019441461}
   obj2: {fileID: 2019441459}
+  anim: {fileID: 1196952611}
 --- !u!212 &986283187
 SpriteRenderer:
   m_ObjectHideFlags: 0

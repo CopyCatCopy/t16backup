@@ -14,6 +14,7 @@ public class HoldDown : MonoBehaviour
     protected float Timer;
     public Text percent;
     public GameObject obj2;
+    public Animator anim;
 
 
     void Start()
@@ -48,10 +49,12 @@ public class HoldDown : MonoBehaviour
         if (WaterPercent == 2)
         {
             percent.text = "50%";
+            anim.SetBool("Water", true);
         }
         if (WaterPercent == 3)
         {
             percent.text = "75%";
+            anim.SetBool("Close", true);
         }
     }
     public void OnMouseUp()
@@ -59,6 +62,7 @@ public class HoldDown : MonoBehaviour
         isPressed = false;
         if (WaterPercent == 4)
         {
+            anim.SetBool("Open", true);
             Debug.Log("Perfect Noodles You Win!!!");
             percent.text = "100%";
             obj.SetActive(true);
