@@ -14376,7 +14376,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 502bc15ceb88a83418f6b7cd1cf19d8c, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.25
+  m_Volume: 0.125
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -36988,8 +36988,6 @@ MonoBehaviour:
   Tutorial: {fileID: 1391790044}
   dayText: {fileID: 1297565282}
   tip: {fileID: 153792735}
-  phone: {fileID: 481049979}
-  audioSource: {fileID: 286050308}
   tipText: {fileID: 1232139514}
   phoneSFX: {fileID: 481049979}
 --- !u!114 &1555971175

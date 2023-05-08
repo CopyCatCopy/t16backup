@@ -22,8 +22,6 @@ public class WorldTimer : MonoBehaviour
     public GameObject Tutorial;
     public Text dayText;
     public GameObject tip;
-    public GameObject phone;
-    public AudioSource audioSource;
     public Text tipText;
     public GameObject phoneSFX;
 
@@ -176,7 +174,6 @@ public class WorldTimer : MonoBehaviour
             if (AllTasksComplete == 1)
             {
                 phoneSFX.SetActive(true);
-                audioSource.Stop();
             }
         }
         if (DayNumber == 6 && AllTasksComplete == 1)
