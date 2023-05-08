@@ -14,6 +14,9 @@ public class Timer : MonoBehaviour
     public GameObject other;
     public WorldTimer wt;
     public bool timeAdded = false;
+    public int AlarmMiniGame = 0;
+    public int SinkMiniGame = 0;
+    public int FoodMiniGame = 0;
 
     private void Start()
     {
@@ -23,6 +26,9 @@ public class Timer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        AlarmMiniGame = PlayerPrefs.GetInt("AlarmMiniGame");
+        SinkMiniGame = PlayerPrefs.GetInt("SinkMiniGame");
+        FoodMiniGame = PlayerPrefs.GetInt("AlarmMiniGame");
         if (time > 0)
         {
             time -=Time.deltaTime;
@@ -48,10 +54,23 @@ public class Timer : MonoBehaviour
     public void Return()
     {
         Debug.Log("Returning");
-        PlayerPrefs.SetInt("AlarmMiniGame", 0);
-        PlayerPrefs.SetInt("SinkMiniGame", 0);
-        PlayerPrefs.SetInt("GameFinished", 1);
-        PlayerPrefs.SetInt("MGameOn", 1);
+        if (AlarmMiniGame == 1)
+        {
+            PlayerPrefs.SetInt("AlarmMiniGame", 0);
+            PlayerPrefs.SetInt("AlarmMiniGameFinished", 1);
+        }
+        if (SinkMiniGame == 1)
+        {
+            PlayerPrefs.SetInt("SinkMiniGame", 0);
+            PlayerPrefs.SetInt("SinkMiniGameFinished", 1);
+        }
+        if (FoodMiniGame == 1)
+        {
+            PlayerPrefs.SetInt("FoodMiniGame", 0);
+            PlayerPrefs.SetInt("GameFinished", 1);
+        }
+        PlayerPrefs.SetInt("MGameOn", 1); 
+        PlayerPrefs.SetInt("MiniGameSet", 1);
         if (timeAdded == false)
         {
             wt.time += 15;
@@ -63,13 +82,23 @@ public class Timer : MonoBehaviour
     public void ReturnFailed()
     {
         Debug.Log("Returning");
-        PlayerPrefs.SetInt("AlarmMiniGame", 0);
-        PlayerPrefs.SetInt("SinkMiniGame", 0);
-        PlayerPrefs.SetInt("GameFinished", 1);
+        if (AlarmMiniGame == 1)
+        {
+            PlayerPrefs.SetInt("AlarmMiniGame", 0);
+            PlayerPrefs.SetInt("AlarmMiniGameFinished", 1);
+        }
+        if (SinkMiniGame == 1)
+        {
+            PlayerPrefs.SetInt("SinkMiniGame", 0);
+            PlayerPrefs.SetInt("SinkMiniGameFinished", 1);
+        }
+        if (FoodMiniGame == 1)
+        {
+            PlayerPrefs.SetInt("FoodMiniGame", 0);
+            PlayerPrefs.SetInt("GameFinished", 1);
+        }
+        PlayerPrefs.SetInt("MiniGameSet", 1);
         PlayerPrefs.SetInt("BedUsed", 1);
         PlayerPrefs.SetInt("MGameOn", 1);
-        PlayerPrefs.SetInt("AlarmMiniGameWinComplete", 0);
-        PlayerPrefs.SetInt("SinkMiniGameWinComplete", 0);
-
     }
 }

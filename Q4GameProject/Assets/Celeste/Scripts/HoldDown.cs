@@ -62,6 +62,9 @@ public class HoldDown : MonoBehaviour
             Debug.Log("Perfect Noodles You Win!!!");
             percent.text = "100%";
             obj.SetActive(true);
+            PlayerPrefs.SetInt("FoodGameFinished", 1);
+            PlayerPrefs.SetInt("FoodMiniGame", 0);
+            PlayerPrefs.SetInt("MGameOn", 1);
         }
     }
 

@@ -7,10 +7,11 @@ public class MainGameOn : MonoBehaviour
     public int MGameOn = 1;
     public int AlarmMiniGameOn = 0;
     public int SinkMiniGameOn = 0;
-    public int CookingMiniGameOn = 0;
+    public int FoodMiniGameOn = 0;
     public GameObject AlarmMiniGame;
     public GameObject MainGame;
     public GameObject SinkMiniGame;
+    public GameObject FoodMiniGame;
     public int GameFinished = 0;
 
     public void Update()
@@ -18,6 +19,7 @@ public class MainGameOn : MonoBehaviour
         MGameOn = PlayerPrefs.GetInt("MGameOn");
         AlarmMiniGameOn = PlayerPrefs.GetInt("AlarmMiniGame");
         SinkMiniGameOn = PlayerPrefs.GetInt("SinkMiniGame");
+        FoodMiniGameOn = PlayerPrefs.GetInt("FoodMiniGame");
         GameFinished = PlayerPrefs.GetInt("GameFinished");
         if(AlarmMiniGameOn == 1)
         {
@@ -81,6 +83,28 @@ public class MainGameOn : MonoBehaviour
             MGameOn = 0;
             PlayerPrefs.SetInt("GameFinished", 0);
         }
+        if (MGameOn == 0 && FoodMiniGameOn == 1 && GameFinished == 0)
+        {
+            Debug.Log("ITSS ALLIVEEE");
+            TurnOffMainScene();
+            TurnOnFoodMiniGame();
+            MGameOn = 0;
+
+        }
+        if (MGameOn == 1 && FoodMiniGameOn == 0 && GameFinished == 1)
+        {
+            if (MGameOn == 1 && FoodMiniGameOn == 0 && GameFinished == 1)
+            {
+                TurnOnMainScene();
+                TurnOffFoodMiniGame();
+                MGameOn = 0;
+                PlayerPrefs.SetInt("GameFinished", 0);
+            }
+            TurnOnMainScene();
+            TurnOffFoodMiniGame();
+            MGameOn = 0;
+            PlayerPrefs.SetInt("GameFinished", 0);
+        }
 
     }
 
@@ -117,6 +141,18 @@ public class MainGameOn : MonoBehaviour
     public void TurnOffSinkMiniGame()
     {
         SinkMiniGame.SetActive(false);
+    }
+
+            //FoodGame
+
+    public void TurnOnFoodMiniGame()
+    {
+        FoodMiniGame.SetActive(true);
+    }
+
+    public void TurnOffFoodMiniGame()
+    {
+        FoodMiniGame.SetActive(false);
     }
 
     private void OnDestroy()

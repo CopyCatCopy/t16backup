@@ -222,6 +222,15 @@ public class WorldTimer : MonoBehaviour
         PlayerPrefs.SetInt("ActivateGame", 1);
         PlayerPrefs.SetFloat("Time", 0);
         PlayerPrefs.SetInt("Days", 1);
+        PlayerPrefs.SetInt("AlarmMiniGameComplete", 0);
+        PlayerPrefs.SetInt("SinkMiniGameComplete", 0);
+        PlayerPrefs.SetInt("AlarmMiniGameWinAmount", 0);
+        PlayerPrefs.SetInt("SinkMiniGameWinAmount", 0);
+        PlayerPrefs.SetInt("FoodMiniGameComplete", 0);
+        PlayerPrefs.SetInt("FoodMiniGameWinAmount", 0);
+        PlayerPrefs.SetInt("AlarmMiniGameFinished", 0);
+        PlayerPrefs.SetInt("SinkMiniGameFinished", 0);
+        PlayerPrefs.SetInt("FoodMiniGameFinished", 0);
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
@@ -230,8 +239,11 @@ public class WorldTimer : MonoBehaviour
 
     public void ResetTheDay()
     {
+        PlayerPrefs.SetInt("AlarmMiniGameComplete", 0);
+        PlayerPrefs.SetInt("SinkMiniGameComplete", 0);
         PlayerPrefs.SetFloat("Time", 0);
         PlayerPrefs.SetInt("ResetDataBool", 1);
+        PlayerPrefs.SetInt("FoodMiniGameComplete", 0);
         DelayBool = true;
         SceneManager.LoadScene("Sleep");
     }
