@@ -221,6 +221,7 @@ public class WorldTimer : MonoBehaviour
         PlayerPrefs.SetInt("Days", 1);
         PlayerPrefs.SetInt("AlarmMiniGameComplete", 0);
         PlayerPrefs.SetInt("SinkMiniGameComplete", 0);
+        PlayerPrefs.SetInt("FoodMiniGameComplete", 0);
         PlayerPrefs.SetInt("AlarmMiniGameWinAmount", 0);
         PlayerPrefs.SetInt("SinkMiniGameWinAmount", 0);
         PlayerPrefs.SetInt("FoodMiniGameComplete", 0);

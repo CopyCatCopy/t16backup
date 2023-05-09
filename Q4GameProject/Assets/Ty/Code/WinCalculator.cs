@@ -35,7 +35,7 @@ public class WinCalculator : MonoBehaviour
         {
             Debug.Log("#8");
         }
-        if (AlarmMiniGameFinished == 1)
+        if (FoodMiniGameFinished == 1)
         {
             Debug.Log("#9");
         }
@@ -48,7 +48,7 @@ public class WinCalculator : MonoBehaviour
             PlayerPrefs.SetInt("MiniGameSet", 0);
             Debug.Log(AlarmMiniGameCompleteAmount);
             Changing = true;
-            Invoke("Changed", 3f);
+            Invoke("Changed", 1f);
         }
         if( SinkMiniGameComplete == 1 && Changing == false && MiniGameSet == 1 && SinkMiniGameFinished == 1)
         {
@@ -57,6 +57,16 @@ public class WinCalculator : MonoBehaviour
             PlayerPrefs.SetInt("SinkMiniGameFinished", 0);
             PlayerPrefs.SetInt("MiniGameSet", 0);
             Debug.Log(SinkMiniGameCompleteAmount);
+            Changing = true;
+            Invoke("Changed", 1f);
+        }
+        if (FoodMiniGameComplete == 1 && Changing == false && MiniGameSet == 1 && FoodMiniGameFinished == 1)
+        {
+            FoodMiniGameCompleteAmount++;
+            PlayerPrefs.SetInt("FoodMiniGameWinAmount", FoodMiniGameCompleteAmount);
+            PlayerPrefs.SetInt("FoodMiniGameFinished", 0);
+            PlayerPrefs.SetInt("MiniGameSet", 0);
+            Debug.Log(FoodMiniGameCompleteAmount);
             Changing = true;
             Invoke("Changed", 1f);
         }
@@ -80,7 +90,17 @@ public class WinCalculator : MonoBehaviour
             Changing = true;
             Invoke("Changed", 1f);
         }
-        if (AlarmMiniGameCompleteAmount > 3 && SinkMiniGameCompleteAmount > 3 && FoodMiniGameCompleteAmount > 3)
+        if (FoodMiniGameComplete == 0 && Changing == false && MiniGameSet == 1 && FoodMiniGameFinished == 1)
+        {
+            FoodMiniGameCompleteAmount--;
+            PlayerPrefs.SetInt("FoodMiniGameWinAmount", FoodMiniGameCompleteAmount);
+            PlayerPrefs.SetInt("FoodMiniGameFinished", 0);
+            PlayerPrefs.SetInt("MiniGameSet", 0);
+            Debug.Log(FoodMiniGameCompleteAmount);
+            Changing = true;
+            Invoke("Changed", 1f);
+        }
+        if (AlarmMiniGameCompleteAmount >= 12 && SinkMiniGameCompleteAmount >= 12 && FoodMiniGameCompleteAmount >= 3)
         {
             PlayerPrefs.SetInt("AllTasksComplete", 1);
         }

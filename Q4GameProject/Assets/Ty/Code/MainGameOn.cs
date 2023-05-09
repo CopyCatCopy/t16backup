@@ -12,7 +12,9 @@ public class MainGameOn : MonoBehaviour
     public GameObject MainGame;
     public GameObject SinkMiniGame;
     public GameObject FoodMiniGame;
-    public int GameFinished = 0;
+    public int AlarmMiniGameFinished = 0;
+    public int SinkMiniGameFinished = 0;
+    public int FoodMiniGameFinished = 0;
 
     public void Update()
     {
@@ -20,8 +22,10 @@ public class MainGameOn : MonoBehaviour
         AlarmMiniGameOn = PlayerPrefs.GetInt("AlarmMiniGame");
         SinkMiniGameOn = PlayerPrefs.GetInt("SinkMiniGame");
         FoodMiniGameOn = PlayerPrefs.GetInt("FoodMiniGame");
-        GameFinished = PlayerPrefs.GetInt("GameFinished");
-        if(AlarmMiniGameOn == 1)
+        AlarmMiniGameFinished = PlayerPrefs.GetInt("AlarmMiniGameFinished");
+        SinkMiniGameFinished = PlayerPrefs.GetInt("SinkMiniGameFinished");
+        FoodMiniGameFinished = PlayerPrefs.GetInt("FoodMiniGameFinished");
+        if (AlarmMiniGameOn == 1)
         {
             Debug.Log("#1");
         }
@@ -31,7 +35,7 @@ public class MainGameOn : MonoBehaviour
             Debug.Log("#2");
         }
 
-        if(GameFinished == 0)
+        if(SinkMiniGameFinished == 0)
         {
             Debug.Log("#3");
         }
@@ -39,29 +43,33 @@ public class MainGameOn : MonoBehaviour
         {
             Debug.Log("#4");
         }
+        if (MGameOn == 1)
+        {
+            Debug.Log("ITS ONNN");
+        }
 
-        if (MGameOn == 0 && AlarmMiniGameOn == 1 && GameFinished == 0)
+        if (MGameOn == 0 && AlarmMiniGameOn == 1 && AlarmMiniGameFinished == 0)
         {
             TurnOffMainScene();
             TurnOnAlarmMiniGame();
             MGameOn = 0;
             
         }
-        if (MGameOn == 1 && AlarmMiniGameOn == 0 && GameFinished == 1)
+        if (MGameOn == 1 && AlarmMiniGameOn == 0 && AlarmMiniGameFinished == 1)
         {
-            if (MGameOn == 1 && SinkMiniGameOn == 0 && GameFinished == 1)
+            if (MGameOn == 1 && AlarmMiniGameOn == 0 && AlarmMiniGameFinished == 1)
             {
                 TurnOnMainScene();
                 TurnOffSinkMiniGame();
                 MGameOn = 0;
-                PlayerPrefs.SetInt("GameFinished", 0);
+                
             }
             TurnOnMainScene();
             TurnOffAlarmMiniGame();
             MGameOn = 0;
-            PlayerPrefs.SetInt("GameFinished", 0);
+            
         }
-        if (MGameOn == 0 && SinkMiniGameOn == 1 && GameFinished == 0)
+        if (MGameOn == 0 && SinkMiniGameOn == 1 && SinkMiniGameFinished == 0)
         {
             Debug.Log("ITSS ALLIVEEE");
             TurnOffMainScene();
@@ -69,21 +77,21 @@ public class MainGameOn : MonoBehaviour
             MGameOn = 0;
 
         }
-        if (MGameOn == 1 && SinkMiniGameOn == 0 && GameFinished == 1)
+        if (MGameOn == 1 && SinkMiniGameOn == 0 && SinkMiniGameFinished == 1)
         {
-            if (MGameOn == 1 && SinkMiniGameOn == 0 && GameFinished == 1)
+            if (MGameOn == 1 && SinkMiniGameOn == 0 && SinkMiniGameFinished == 1)
             {
                 TurnOnMainScene();
                 TurnOffAlarmMiniGame();
                 MGameOn = 0;
-                PlayerPrefs.SetInt("GameFinished", 0);
+                
             }
             TurnOnMainScene();
             TurnOffSinkMiniGame();
             MGameOn = 0;
-            PlayerPrefs.SetInt("GameFinished", 0);
+            
         }
-        if (MGameOn == 0 && FoodMiniGameOn == 1 && GameFinished == 0)
+        if (MGameOn == 0 && FoodMiniGameOn == 1 && FoodMiniGameFinished == 0)
         {
             Debug.Log("ITSS ALLIVEEE");
             TurnOffMainScene();
@@ -91,19 +99,19 @@ public class MainGameOn : MonoBehaviour
             MGameOn = 0;
 
         }
-        if (MGameOn == 1 && FoodMiniGameOn == 0 && GameFinished == 1)
+        if (MGameOn == 1 && FoodMiniGameOn == 0 && FoodMiniGameFinished == 1)
         {
-            if (MGameOn == 1 && FoodMiniGameOn == 0 && GameFinished == 1)
+            if (MGameOn == 1 && FoodMiniGameOn == 0 && FoodMiniGameFinished == 1)
             {
                 TurnOnMainScene();
                 TurnOffFoodMiniGame();
                 MGameOn = 0;
-                PlayerPrefs.SetInt("GameFinished", 0);
+                
             }
             TurnOnMainScene();
             TurnOffFoodMiniGame();
             MGameOn = 0;
-            PlayerPrefs.SetInt("GameFinished", 0);
+            
         }
 
     }

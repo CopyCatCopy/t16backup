@@ -28,7 +28,7 @@ public class Timer : MonoBehaviour
     {
         AlarmMiniGame = PlayerPrefs.GetInt("AlarmMiniGame");
         SinkMiniGame = PlayerPrefs.GetInt("SinkMiniGame");
-        FoodMiniGame = PlayerPrefs.GetInt("AlarmMiniGame");
+        FoodMiniGame = PlayerPrefs.GetInt("FoodMiniGame");
         if (time > 0)
         {
             time -=Time.deltaTime;
@@ -67,7 +67,7 @@ public class Timer : MonoBehaviour
         if (FoodMiniGame == 1)
         {
             PlayerPrefs.SetInt("FoodMiniGame", 0);
-            PlayerPrefs.SetInt("GameFinished", 1);
+            PlayerPrefs.SetInt("FoodMiniGameFinished", 1);
         }
         PlayerPrefs.SetInt("MGameOn", 1); 
         PlayerPrefs.SetInt("MiniGameSet", 1);
@@ -95,7 +95,7 @@ public class Timer : MonoBehaviour
         if (FoodMiniGame == 1)
         {
             PlayerPrefs.SetInt("FoodMiniGame", 0);
-            PlayerPrefs.SetInt("GameFinished", 1);
+            PlayerPrefs.SetInt("FoodMiniGameFinished", 1);
         }
         PlayerPrefs.SetInt("MiniGameSet", 1);
         PlayerPrefs.SetInt("BedUsed", 1);
