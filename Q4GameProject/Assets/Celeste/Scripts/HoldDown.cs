@@ -19,10 +19,7 @@ public class HoldDown : MonoBehaviour
     public GameObject water;
     public GameObject clear;
     public GameObject ui;
-    //public GameObject button1;
-    //public GameObject button2;
-    //public GameObject button3;
-    //public GameObject button4;
+    public Animator ball;
 
     void Start()
     {
@@ -45,24 +42,30 @@ public class HoldDown : MonoBehaviour
             if (WaterPercent == 0)
             {
                 percent.text = "0%";
+                
             }
             
             if (WaterPercent == 1)
             {
                 percent.text = "25%";
                 water.SetActive(true);
+                ball.SetBool("stage2", true);
             }
             if (WaterPercent == 2)
             {
                 percent.text = "50%";
                 anim.SetBool("Water", true);
                 water.SetActive(false);
+                ball.SetBool("stage2", false);
+                ball.SetBool("stage3", true);
             }
             if (WaterPercent == 3)
             {
                 percent.text = "75%";
                 anim.SetBool("Close", true);
                 anim.SetBool("Water", false);
+                ball.SetBool("stage4", true);
+                ball.SetBool("stage3", false);
             }
         }
 
