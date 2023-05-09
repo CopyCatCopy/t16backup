@@ -19,7 +19,7 @@ public class TipController : MonoBehaviour
         }
         else if (other.CompareTag("bookshelf"))
         {
-            tip.text = string.Format("' F ' to collect");
+            tip.text = string.Format("' F ' to collect & Drag to Inventory");
         }
 
     }

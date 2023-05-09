@@ -219,6 +219,7 @@ public class WorldTimer : MonoBehaviour
         PlayerPrefs.SetInt("ActivateGame", 1);
         PlayerPrefs.SetFloat("Time", 0);
         PlayerPrefs.SetInt("Days", 1);
+        PlayerPrefs.SetInt("AllTasksComplete", 0);
         PlayerPrefs.SetInt("AlarmMiniGameComplete", 0);
         PlayerPrefs.SetInt("SinkMiniGameComplete", 0);
         PlayerPrefs.SetInt("FoodMiniGameComplete", 0);
